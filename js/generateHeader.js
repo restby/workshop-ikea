@@ -1,4 +1,3 @@
-'use strict';
 // объявление функции которая: вставляет разметку header в начало тега body
 const generateHeader = () => {
   const headerElement = `
@@ -16,12 +15,12 @@ const generateHeader = () => {
             <img src="image/ikea-logo.svg" alt="Логотип">
           </a>
           <form class="search" method="get" action="goods.html">
-            <input type="search" name="s" maxlength="150" class="search-input" spellcheck="false"
+            <input type="search" name="search" maxlength="150" class="search-input" spellcheck="false"
               aria-label="Искать товары, новинки и вдохновение" aria-placeholder="Искать товары, новинки и вдохновение"
               placeholder="Что вы ищете?" autocapitalize="off" autocomplete="off" autocorrect="off">
             <button type="submit" class="btn search-btn" aria-label="найти"></button>
           </form>
-          <a href="goods.html?cat=wishlist" class="btn btn-wishlist">
+          <a href="goods.html?wishlist" class="btn btn-wishlist">
             <svg focusable="false" class="svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -43,4 +42,4 @@ const generateHeader = () => {
   `;
   document.body.insertAdjacentHTML('afterbegin', headerElement);
 }
-generateHeader();
+export default generateHeader;

@@ -1,3 +1,4 @@
+'use strict';
 // объявление функции которая: вставляет разметку subcatalog в конец тега body
 const generateSubCatalog = () => {
   const subCatalog = `

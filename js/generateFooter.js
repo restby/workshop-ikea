@@ -1,4 +1,3 @@
-'use strict';
 // объявление функции которая: вставляет разметку footer в конец тега body
 const generateFooter = () => {
   const footerElement = `
@@ -43,4 +42,4 @@ const generateFooter = () => {
   `;
   document.body.insertAdjacentHTML('beforeend', footerElement);
 }
-generateFooter();
+export default generateFooter;

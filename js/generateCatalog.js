@@ -1,4 +1,3 @@
-'use strict';
 // объявление функции которая: вставляет разметку catalog в конец тега body
 const generateCatalog = () => {
   const catalogElement = `
@@ -24,4 +23,4 @@ const generateCatalog = () => {
   `;
   document.body.insertAdjacentHTML('beforeend', catalogElement);
 }
-generateCatalog();
+export default generateCatalog;
